@@ -94,7 +94,7 @@ loss_fn = nn.CrossEntropyLoss()  # 지표 정의: 모델의 예측값과 실제 
 summary = []  # 파이널 보고서 작성: 두 실험군의 최고 성능 시점과 메트릭 정보를 요약하여 모아둘 상자입니다.
 
 for name, lr in [("baseline", 0.001), ("candidate_1", 0.01), ("candidate_2", 0.1), ("candidate_3", 0.2)]:
-    # candidate 2개를 더하여 lr를 0.1와 0.2 변경함 
+    # candidate_2, candidate_3 : 2개를 추가하여 lr를 0.1와 0.2 변경하여 진행 
     torch.manual_seed(42)  # 통제 변수 고정: 두 실험 모델의 초기 시작 파라미터 상태를 완벽하게 통일하여 불공정한 비교를 원천 차단합니다.
     
     # 아키텍처 빌드: 2차원 업무 특징을 받아 복잡한 비선형 경계선을 그릴 수 있는 미니 ANN 구조를 조립합니다.
