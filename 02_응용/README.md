@@ -309,7 +309,7 @@ TODO가 요구하는 후보 수·값·출력 모양을 모두 확인하고, 아�
 
 SGD 대 AdamW는 갱신 규칙, AdamW 대 AdamW+Dropout은 Dropout 효과를 비교합니다.
 
-내 설명: ______________________________
+# 내 설명: AdamW는 최적화 , SDG은 train, valid 둘다 나쁨, AdamW+Dropout은 AdamW 비교하여 valid 가 좀 튀어 보임. 
 
 ---
 ## 실습 08 · 07번 결과를 다시 실행하고 설명하기
